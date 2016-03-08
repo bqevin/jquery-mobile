@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <!--Page One-->
+  <div data-role="page" id="pageone" style="background:#7EA95E;">
+    <!--Header-->
+    <div data-role="header" data-theme="a">
+      <img border="0" src="images/logo.png" alt="Logo, SamrtFarming App" style="width:100%;display:block" />
+      <!--  <h1>Smart Farming</h1> -->
+    </div>
+    <!--Content-->
+    <div data-role="main" class="ui-content">
+      <!-- <p style="text-align:center;">Welcome to Smart Farming Portal where every farmer is a champ!</p>
+ -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a">
+          <!--Register-->
+          <a href="#registerOne" data-rel="popup" data-icon="plus" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-shadow ui-btn-icon-left">Register as farmer</a>
+          <div data-role="popup" id="registerOne">
+            <div data-role="header">
+              <h1>Register Account</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+              <h2>Create a smart farmer account</h2>
+              <p>Fill All required details</p>
+              <input type="text" name="fname" placeholder="Firstname">
+              <input type="text" name="lname" placeholder="Lasttname">
+              <input type="text" name="fname" placeholder="Firstname"> State Gender
+              <label for="male">Male</label>
+              <input type="checkbox" name="male" id="male" value="male">
+              <label for="female">Female</label>
+              <input type="checkbox" name="female" id="female" value="female">
+              <input type="text" name="location" placeholder="Farm Location">
+              <input type="text" name="phone" placeholder="Phone Number">
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-check ui-btn-icon-left" data-rel="back">create Account</a>
+            </div>
+          </div>
+          <!--login-->
+          <a href="#loginOne" data-rel="popup" data-icon="plus" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-shadow ui-btn-icon-left">Login your account</a>
+          <div data-role="popup" id="loginOne">
+            <div data-role="header">
+              <h1>Login to Account</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+              <h2>Login to your account</h2>
+              <p>Insert phone number & password</p>
+              <input type="text" name="fname" placeholder="Email Address/Phone Number">
+              <input type="text" name="lname" placeholder="Password">
+              <a href="#view" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-check ui-btn-icon-left" data-rel="back">Signin</a>
+            </div>
+          </div>
+          <br>
+          <span style="color:#fff; text-align:center; font-size:14px;">Welcome to Smart Farming Portal where every farmer is a champ!</span>
+          <div data-role="popup" id="loginOne">
+          </div>
+          <br>
+          <br>
+          <a href="#services">Page After Login</a>
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center; font-size:10px;">&copy; 2016 SmartFarming Mobile App </p>
+        </div>
+      </div>
+      <!--Page Two-->
+      <div data-role="page" id="services">
+        <div data-role="panel" id="menu">
+          <ul data-role="listview">
+            <li><a href="#view" data-transition="fade">View Crops</a></li>
+            <li><a href="#tips" data-transition="fade">Farming Tips</a></li>
+            <li><a href="#prices" data-transition="fade">Market & Price</a></li>
+            <li><a href="#register" data-transition="fade">Register New User</a></li>
+          </ul>
+        </div>
+        <!--Header-->
+        <div data-role="header" data-theme="b">
+          <a href="#menu" data-icon="bars" data-theme="a">Home</a>
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <p> All Products shall be listed
+            <header></header>
+          </p>
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App | Developed By: <a href="http://ccoretechnologies.com" target="_blank">CloudCore Technologies</a></p>
+        </div>
+      </div>
+      <!--Page Three-->
+      <div data-role="page" id="">
+        <!--Header-->
+        <div data-role="header" data-add-back-btn="true" data-theme="b">
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <ul data-role="listview">
+            <li>View Crops</li>
+            <li>Farming Tips</li>
+            <li>Market & Price</li>
+            <li>Register New User</li>
+          </ul>
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App</p>
+        </div>
+      </div>
+      <!--Register New User-->
+      <div data-role="page" id="register">
+        <div data-role="panel" id="menu">
+          <ul data-role="listview">
+            <li><a href="#view">View Crops</a></li>
+            <li><a href="#tips">Farming Tips</a></li>
+            <li><a href="#prices">Market & Price</a></li>
+            <li><a href="#">Register New User</a></li>
+          </ul>
+        </div>
+        <!--Header-->
+        <div data-role="header" data-theme="b">
+          <a href="#menu" data-icon="bars" data-theme="a">Home</a>
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <input type="text" name="fname" placeholder="Firstname">
+          <input type="text" name="lname" placeholder="Lasttname">
+          <input type="text" name="fname" placeholder="Firstname"> State Gender
+          <label for="male">Male</label>
+          <input type="checkbox" name="male" id="male" value="male">
+          <label for="female">Female</label>
+          <input type="checkbox" name="female" id="female" value="female">
+          <input type="text" name="location" placeholder="Farm Location">
+          <input type="text" name="phone" placeholder="Phone Number">
+          <input type="submit" data-inline="true" value="Register">
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App </p>
+        </div>
+      </div>
+      <!--Farming Tips-->
+      <div data-role="page" id="tips">
+        <div data-role="panel" id="menu">
+          <ul data-role="listview">
+            <li><a href="#view">View Crops</a></li>
+            <li><a href="#">Farming Tips</a></li>
+            <li><a href="#prices">Market & Price</a></li>
+            <li><a href="#register">Register New User</a></li>
+          </ul>
+        </div>
+        <!--Header-->
+        <div data-role="header" data-theme="b">
+          <a href="#menu" data-icon="bars" data-theme="a">Home</a>
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <div data-role="collapsible">
+            <h4>Tomato Tips</h4>
+            <ul data-role="listview">
+              <h4>How to grow Tomatoes</h4>
+              <li>
+                <h6>1. Choose A Bright, Airy Spot</h6>
+                <p>Plant tomatoes, leaving room between plants for air to circulate, where they will get at least 10 hours of light in summer.</p>
+              </li>
+              <li>
+                <h6>2. Rotate the crop</h6>
+                <p>Alternate your tomato bed between a few spots in the garden to diminish the risk of soil-borne diseases such as bacterial spot and early blight.</p>
+              </li>
+              <li>
+                <h6>3. Pass Up Overgrown Transplants</h6>
+                <p>When buying tomato seedlings, beware of lush green starts with poor root systems. They will languish for weeks before growing.</p>
+              </li>
+            </ul>
+          </div>
+          <div data-role="collapsible">
+            <h4>Maize Tips</h4>
+            <ul data-role="listview">
+              <h4>How to grow maize</h4>
+              <li>
+                <h6>1. Choose A Bright, Airy Spot</h6>
+                <p>Plant tomatoes, leaving room between plants for air to circulate, where they will get at least 10 hours of light in summer.</p>
+              </li>
+              <li>
+                <h6>2. Rotate the crop</h6>
+                <p>Alternate your tomato bed between a few spots in the garden to diminish the risk of soil-borne diseases such as bacterial spot and early blight.</p>
+              </li>
+              <li>
+                <h6>3. Pass Up Overgrown Transplants</h6>
+                <p>When buying tomato seedlings, beware of lush green starts with poor root systems. They will languish for weeks before growing.</p>
+              </li>
+            </ul>
+          </div>
+          <div data-role="collapsible">
+            <h4>Sukuma Tips</h4>
+            <ul data-role="listview">
+              <h4>How to grow Sukuma</h4>
+              <li>
+                <h6>1. Choose A Bright, Airy Spot</h6>
+                <p>Plant tomatoes, leaving room between plants for air to circulate, where they will get at least 10 hours of light in summer.</p>
+              </li>
+              <li>
+                <h6>2. Rotate the crop</h6>
+                <p>Alternate your tomato bed between a few spots in the garden to diminish the risk of soil-borne diseases such as bacterial spot and early blight.</p>
+              </li>
+              <li>
+                <h6>3. Pass Up Overgrown Transplants</h6>
+                <p>When buying tomato seedlings, beware of lush green starts with poor root systems. They will languish for weeks before growing.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App | Developed By: <a href="http://ccoretechnologies.com" target="_blank">CloudCore Technologies</a></p>
+        </div>
+      </div>
+      <!-- Market and Pricing information-->
+      <div data-role="page" id="prices">
+        <div data-role="panel" id="menu">
+          <ul data-role="listview">
+            <li><a href="#view">View Crops</a></li>
+            <li><a href="#tips">Farming Tips</a></li>
+            <li><a href="#">Market & Price</a></li>
+            <li><a href="#register">Register New User</a></li>
+          </ul>
+        </div>
+        <!--Header-->
+        <div data-role="header" data-theme="b">
+          <a href="#menu" data-icon="bars" data-theme="a">Home</a>
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <fieldset class="ui-field-contain">
+            <label for="market">Market to view Prices</label>
+            <select name="market" id="market">
+              <optgroup label="Juba Markets">
+                <option value="munuki">Munuki Market</option>
+                <option value="konykony">KonyKony</option>
+                <option value="Jebel">Jebel</option>
+              </optgroup>
+              <optgroup label="City Markets">
+                <option value="juba">Juba</option>
+                <option value="wau">Wau</option>
+                <option value="bor">Bor</option>
+                <option value="yei">Yei</option>
+              </optgroup>
+            </select>
+          </fieldset>
+          <input type="submit" data-inline="true" value="Submit">
+        </div>
+        <!--Footer-->
+        <div data-role="footer" data-position="fixed">
+          <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App | Developed By: <a href="http://ccoretechnologies.com" target="_blank">CloudCore Technologies</a></p>
+        </div>
+      </div>
+      <!--View Crops-->
+      <div data-role="page" id="view">
+        <div data-role="panel" id="menu">
+          <ul data-role="listview">
+            <li><a href="#">View Crops</a></li>
+            <li><a href="#tips" data-transition="fade">Farming Tips</a></li>
+            <li><a href="#prices" data-transition="fade">Market & Price</a></li>
+            <li><a href="#register" data-transition="fade">Register New User</a></li>
+          </ul>
+        </div>
+        <!--Header-->
+        <div data-role="header" data-theme="b">
+          <a href="#menu" data-icon="bars" data-theme="a">Home</a>
+          <h1>Smart Farming</h1>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-bar ui-bar-a">Type</div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-bar ui-bar-a">Crop Details</div>
+            </div>
+            <div class="ui-block-a">
+              <span>Tomatoes</span>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-bar">
+                <span>Tomatoes can be grown in lightly mashy but loamy soils.
+          <br>
+          Tomatoes are also commonly classified as determinate or indeterminate. Determinate, or bush, types bear a full crop all at once and top off at a specific height; they are often good choices for container growing. Determinate types are preferred by commercial growers who wish to harvest a whole field at one time, or home growers interested in canning.
+          </span>
+              </div>
+            </div>
+            <div class="ui-block-a">
+              <span>Sukuma Wiki</span>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-bar">
+                <span>Tomatoes can be grown in lightly mashy but loamy soils.
+          <br>
+          Tomatoes are also commonly classified as determinate or indeterminate. Determinate, or bush, types bear a full crop all at once and top off at a specific height; they are often good choices for container growing. Determinate types are preferred by commercial growers who wish to harvest a whole field at one time, or home growers interested in canning.
+          </span>
+              </div>
+            </div>
+          </div>
+          <!--Footer-->
+          <div data-role="footer" data-position="fixed">
+            <p style="text-align:center;">&copy; 2016 SmartFarming Mobile App | Developed By: <a href="http://ccoretechnologies.com" target="_blank">CloudCore Technologies</a></p>
+          </div>
+        </div>
+        <!--         <div data-role="popup" id="login" data-theme="a" class="ui-corner-all">
+          <form>
+            <div style="padding:10px 20px;">
+              <h3>Please sign in</h3>
+              <label for="un" class="ui-hidden-accessible">Username:</label>
+              <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+              <label for="pw" class="ui-hidden-accessible">Password:</label>
+              <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+              <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+            </div>
+          </form>
+        </div> -->
+</body>
+
+</html>
